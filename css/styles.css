@@ -197,7 +197,7 @@ select:valid{
     border: 3px solid rgb(27, 155, 27);
     animation: infinite resplandor 2s;
 }
-.participar{
+button[type="submit"]{                  /*Selector por atributo aplica los estilos solo a la clase button que tenga el atributo submit*/
     background-color: black;
     color: white;
 }
