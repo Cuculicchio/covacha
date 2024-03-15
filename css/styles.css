@@ -172,13 +172,45 @@ form{
 form div{
     margin-bottom: 10px;
 }
+
 input:valid{
-    border: 3px solid green
+    border: 3px solid rgb(27, 155, 27);
+    animation: infinite resplandor 2s;
 }
 input:invalid{
-    border: 3px solid red
+    border: 3px solid rgb(249, 5, 5);
+    animation: infinite resplandor 2s;
 }
+input::placeholder {  /* Pseudo-elemento placeholder*/
+    background: rgb(182, 4, 4);
+    color: rgb(176, 180, 231);
+    padding: 10px;
+    
+  }
+  select:invalid{
+    border: 3px solid rgb(249, 5, 5);
+    animation: infinite resplandor 2s;
+    
 
+}
+select:valid{
+    border: 3px solid rgb(27, 155, 27);
+    animation: infinite resplandor 2s;
+}
+.participar{
+    background-color: black;
+    color: white;
+}
+  @keyframes resplandor {
+    0%,100%{
+      box-shadow: 0px 0px 20px;
+    }
+    50%{
+    box-shadow: 0px 0px 0px;
+    
+    }
+  
+  }
 /*--------Noticias-------------------------------------*/
 .noticias{
     width: 100%;
